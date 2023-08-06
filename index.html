@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/195cd95739.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Quote Generator</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <h1 id="heading">Quote of the Day</h1>
+            <div class="text">
+                <div id="textPart">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p id="Text"> It always seems impossible until it's done. </p>
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+                <div id="author">
+                    -- Nelson Mandela
+                </div>
+            </div>
+            <hr>
+            <div class="buttons">
+                <div class="icons" >
+                    <div id="volume" class="button">
+                        <i class="fa-sharp fa-solid fa-volume-high"></i>
+                    </div>
+                    <div id="copy" class="button" onmouseout = "outFunc()">
+                        <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                        <i class="fa-regular fa-copy"></i>
+                    </div>
+                    <div id="twitter" class="button">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+                <div id="generator">
+                    New Quote
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

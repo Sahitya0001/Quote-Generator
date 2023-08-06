@@ -1,0 +1,140 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    background-color: dodgerblue;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#container{
+    background-color: aliceblue;
+    padding:3em;
+    border-radius: 1em;
+    display: flex;
+    width:25rem;
+    height:18rem;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    gap:1em;
+}
+
+/* #textPart{
+    display: flex;
+    justify-content: space-between;
+    width:20rem;
+    height:89rem;
+} */
+
+.buttons{
+    width: 22em;
+    height:2em;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    /* gap:10em; */
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    gap:0.3em;
+}
+
+#author{
+    justify-self: right;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0.3em;
+    border:2px solid dodgerblue;
+    color:dodgerblue;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+#generator{
+    padding:0.5em;
+    border: 1px solid aliceblue;
+    background-color: dodgerblue;
+    border-radius: 0.4em;
+    color:aliceblue;
+    cursor: pointer;
+}
+
+#textPart{
+    display: flex;
+    gap:1em;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:1em;
+    align-items: center;
+}
+
+
+.button:hover{
+    /* border:2px solid aliceblue; */
+    color:aliceblue;
+    background-color: dodgerblue;
+}
+
+#generator:hover {
+    color:dodgerblue;
+    background-color: aliceblue;
+    border:1px solid dodgerblue;
+}
+
+#copy {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #copy .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  #copy .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  #copy:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
